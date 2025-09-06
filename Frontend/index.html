@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobSpark | Jobs-Park-Platform - Find Jobs & Hire Talent</title>
+    <meta name="description" content="JobSpark connects skilled professionals with top employers. Search jobs, post vacancies, and get hired faster. Perfect for workers and recruiters alike." />
+    <meta name="keywords" content="jobs, job search, hire talent, freelance, remote work, career, recruitment, professionals, employers" />
+    <meta name="author" content="Ethronics" />
+    <link rel="canonical" href="https://jobsPark.netlify.app/" />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/svg+xml" href="./Vector.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="JobSpark | Find Jobs & Hire Talent" />
+    <meta property="og:description" content="Connect skilled professionals with top employers. Search jobs or hire top talent with JobSpark." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jobsPark.netlify.app/" />
+    <meta property="og:image" content="https://jobsPark.netlify.app/preview-image.jpg" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JobSpark | Find Jobs & Hire Talent" />
+    <meta name="twitter:description" content="Connect skilled professionals with top employers. Search jobs or hire top talent with JobSpark." />
+    <meta name="twitter:image" content="https://jobsPark.netlify.app/preview-image.jpg" />
+    <meta name="twitter:site" content="@YourTwitterHandle" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2563eb" />
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "JobSpark",
+      "url": "https://jobsPark.netlify.app/",
+      "logo": "https://jobsPark.netlify.app/logo.png",
+      "sameAs": [
+        "https://twitter.com/YourTwitterHandle",
+        "https://linkedin.com/company/YourLinkedIn",
+        "https://github.com/Ethronics/Jobs-park-Platform"
+      ],
+      "description": "JobSpark connects skilled professionals with top employers. Search jobs, post vacancies, and get hired faster."
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jobsPark.netlify.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Jobs",
+          "item": "https://jobsPark.netlify.app/jobs"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Frontend Developer",
+          "item": "https://jobsPark.netlify.app/jobs/frontend-developer"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Product/Job Posting Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "JobPosting",
+      "title": "Frontend Developer",
+      "description": "We are seeking a skilled Frontend Developer to join our team at JobSpark. Work with React, Tailwind, and modern web technologies to deliver outstanding UI experiences.",
+      "datePosted": "2025-08-10",
+      "validThrough": "2025-09-10",
+      "employmentType": "Full-time",
+      "hiringOrganization": {
+        "@type": "Organization",
+        "name": "JobSpark",
+        "sameAs": "https://jobsPark.netlify.app/",
+        "logo": "https://jobsPark.netlify.app/logo.png"
+      },
+      "jobLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 JobSpark Lane",
+          "addressLocality": "Remote",
+          "addressRegion": "Global",
+          "postalCode": "00000",
+          "addressCountry": "Worldwide"
+        }
+      },
+      "baseSalary": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": {
+          "@type": "QuantitativeValue",
+          "value": "60000",
+          "unitText": "YEAR"
+        }
+      }
+    }
+    </script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script> -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
