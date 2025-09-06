@@ -22,9 +22,14 @@ await connectDB();
 
 
 // Middleware
+const allowedOrigins = [
+  "http://localhost:5173",           // local dev
+  process.env.FRONTEND_URL           // deployed frontend on Render (set in env vars)
+];
+
 app.use(cors({
-  origin: 'http://localhost:5173', // Frontend origin
-  credentials: true                // Allow credentials (cookies, auth headers)
+  origin: allowedOrigins,
+  credentials: true
 }));
 
 app.use(cookieParser());
