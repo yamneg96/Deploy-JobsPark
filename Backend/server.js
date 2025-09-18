@@ -21,14 +21,8 @@ const app = express();
 await connectDB();
 
 
-// Middleware
-const allowedOrigins = [
-  "http://localhost:5173",           // local dev
-  process.env.FRONTEND_URL           // deployed frontend on Render (set in env vars)
-];
-
 app.use(cors({
-  origin: allowedOrigins,
+  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
   credentials: true
 }));
 
