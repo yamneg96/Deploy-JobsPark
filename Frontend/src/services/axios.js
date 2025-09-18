@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://jobspark-fdix.onrender.com/api',
+  baseURL: 'https://jobparks-fdix.onrender.com/api',
   withCredentials: true, // keep this if you plan to use cookies
 });
 
