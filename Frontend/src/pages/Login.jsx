@@ -29,7 +29,7 @@ const Login = () => {
     setLoading(true);
     try {
       const res = await login(data);
-      localStorage.setItem('user', JSON.stringify(res));
+      sessionStorage.setItem('user', JSON.stringify(res));
       setUser(res);
       toast.success('Logged in successfully!');
 
